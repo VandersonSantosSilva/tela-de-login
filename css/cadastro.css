@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root{
+    --color0: #000000;
+    --color1: #ffffff;
+    --color2: #df445e;
+    --color3: #df445eb2;
+}
+
+body{
+    background-color: var(--color0);
+
+}
+
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--color1);
+}
+
+h4{
+    color: var(--color1);
+    font-size: 13px;
+    margin: 10px 5px 0px 0px;
+    text-transform: uppercase;
+}
+
+.cadastro{
+    position: absolute;
+    right: 15px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box{
+    width: 400px;
+    background-color: transparent;
+    font-size: 20px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    border: solid 5px var(--color2);
+}
+
+
+input{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 2px var(--color2);
+    background-color: transparent;
+    color: var(--color1);
+}
+
+input[type="button"]{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 20px 5px var(--color3);
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+label{
+    margin-top: 30px;
+    color: var(--color1);
+
+}
+
+i{
+    position: absolute;
+    color: var(--color1);
+    left: 23px;
+    padding: 5px;
+}
+
+.email{
+    top: 130px;
+    font-size: 18px;
+}
+
+
+.senha{
+    top: 225px;
+    font-size: 18px;
+}
+
+::placeholder{
+    color: var(--color1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .box{
+        width: 300px;
+
+    }
+
+}

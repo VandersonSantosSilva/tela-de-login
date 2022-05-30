@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/351b23805f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/login.png" type="image/x-icon">
+    <title>Entre com seus dados</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box">
+            <h1>Faça seu login</h1>
+            <i class="fa-solid fa-user-astronaut email"></i>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <i class="fa-solid fa-key senha"></i>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua Senha">
+            <input type="button" value="Entrar" onclick="entrar()">
+            
+            <a href="#">
+                <h4>Esqueci minha senha</h4>
+            </a>
+
+            <a class="cadastro" href="./html/cadastro.html">
+                <h4>Cadastre-se</h4>
+            </a>
+        
+        </div>
+    </div>
+    
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="./javascript/login.js"></script>
+</body>
+</html>
